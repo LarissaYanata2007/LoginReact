@@ -57,13 +57,13 @@ export default function App() {
           />
           <TouchableOpacity
             onPress={() => setIsPasswordVisible(!isPasswordVisible)} 
-            style={{ position: 'absolute', right: 15, top: 10 }}
+            style={{ position: 'absolute', right: 20, top: 18 }}
           >
-            {/* <Ionicons
+             <Ionicons
               name={isPasswordVisible ? 'eye' : 'eye-off'}
               size={24}
             //   color="gray"
-            /> */}
+            /> 
           </TouchableOpacity>
           {erroSenha ? <TextErrorHint>Senha inválida</TextErrorHint> : null}
         </View>
@@ -115,3 +115,4 @@ const TextErrorHint = styled.Text`
   font-size: 16px;
   color: #E63946;
 `;
+
